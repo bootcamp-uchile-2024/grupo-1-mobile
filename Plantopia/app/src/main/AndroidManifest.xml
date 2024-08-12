@@ -13,15 +13,6 @@
         android:theme="@style/Theme.Plantopia"
         tools:targetApi="31">
         <activity
-            android:name=".ProductoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CatalogoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CarritoActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -30,6 +21,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ProductoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CatalogoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CarritoActivity"
+            android:exported="false" />
+
+
     </application>
 
 </manifest>

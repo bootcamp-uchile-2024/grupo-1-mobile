@@ -177,7 +177,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/cart"
+            android:id="@+id/menu"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -185,7 +185,7 @@
             app:srcCompat="@drawable/baseline_menu_24" />
 
         <ImageView
-            android:id="@+id/cart"
+            android:id="@+id/home"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -193,7 +193,7 @@
             app:srcCompat="@drawable/baseline_home_24" />
 
         <ImageView
-            android:id="@+id/cart"
+            android:id="@+id/user"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -201,7 +201,7 @@
             app:srcCompat="@drawable/baseline_account_circle_24" />
 
         <ImageView
-            android:id="@+id/cart"
+            android:id="@+id/carro"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
