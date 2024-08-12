@@ -31,12 +31,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(go_home)
         })
         // User
-        // val iconoUser: ImageView = findViewById(R.id.user)
-        // iconoUser.setOnClickListener(View.OnClickListener {
-        // val go_user = Intent(this, MainUser::class.java)
-        //     startActivity(go_user)
-        // })
-        // Home
+//        val iconoUser: ImageView = findViewById(R.id.user)
+//        iconoUser.setOnClickListener(View.OnClickListener {
+//        val go_user = Intent(this, MainUser::class.java)
+//            startActivity(go_user)
+//        })
+        // Carro
         val iconoCarro: ImageView = findViewById(R.id.carro)
         iconoCarro.setOnClickListener(View.OnClickListener {
             val go_carro = Intent(this, CarritoActivity::class.java)

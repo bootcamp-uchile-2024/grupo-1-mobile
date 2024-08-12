@@ -35,7 +35,7 @@ class CarritoActivity : AppCompatActivity() {
         // val go_user = Intent(this, MainUser::class.java)
         //     startActivity(go_home)
         // })
-        // Home
+        // Carro
         val iconoCarro: ImageView = findViewById(R.id.carro)
         iconoCarro.setOnClickListener(View.OnClickListener {
             val go_carro = Intent(this, CarritoActivity::class.java)

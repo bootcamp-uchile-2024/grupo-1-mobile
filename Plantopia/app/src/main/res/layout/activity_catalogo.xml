@@ -55,7 +55,7 @@
         android:id="@+id/Busqueda"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/rounded_edit"
         android:ems="10"
         android:inputType="text"
