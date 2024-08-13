@@ -8,6 +8,7 @@
     android:animationCache="true"
     tools:context=".MainActivity">
 
+
     <EditText
         android:id="@+id/Busqueda"
         android:layout_width="350dp"
@@ -32,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/plantas_ini.png" />
+        tools:srcCompat="@drawable/plantas_ini"/>
 
     <LinearLayout
         android:id="@+id/recomendaciones"
