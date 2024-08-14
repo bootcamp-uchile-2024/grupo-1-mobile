@@ -7,55 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#054B17"
-        android:gravity="bottom"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageView
-            android:id="@+id/menu"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:padding="10dp"
-            app:srcCompat="@drawable/baseline_menu_24" />
-
-        <ImageView
-            android:id="@+id/home"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:padding="10dp"
-            app:srcCompat="@drawable/baseline_home_24" />
-
-        <ImageView
-            android:id="@+id/user"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:padding="10dp"
-            app:srcCompat="@drawable/baseline_account_circle_24" />
-
-        <ImageView
-            android:id="@+id/carro"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:padding="10dp"
-            app:srcCompat="@drawable/baseline_shopping_cart_24" />
-    </LinearLayout>
-
     <EditText
         android:id="@+id/Busqueda"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/rounded_edit"
         android:ems="10"
         android:inputType="text"
@@ -63,7 +19,7 @@
         android:text="Buscar"
         android:translationZ="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -81,8 +37,8 @@
         android:id="@+id/imageView"
         android:layout_width="274dp"
         android:layout_height="280dp"
-        android:layout_marginTop="140dp"
-        android:alpha="0.3"
+        android:layout_marginTop="132dp"
+        android:alpha="0.1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -111,5 +67,59 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#054B17"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            app:srcCompat="@drawable/baseline_menu_24" />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            app:srcCompat="@drawable/baseline_home_24" />
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            app:srcCompat="@drawable/baseline_account_circle_24" />
+
+        <ImageView
+            android:id="@+id/carro"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            app:srcCompat="@drawable/baseline_shopping_cart_24" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/lupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="12dp"
+        android:translationZ="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/Busqueda"
+        app:layout_constraintTop_toTopOf="@+id/Busqueda"
+        app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

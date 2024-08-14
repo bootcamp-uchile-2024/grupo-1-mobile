@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.utils.widget.MockView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -15,8 +16,20 @@ class CatalogoActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_catalogo)
 
-        // Menu Inferior
 
+        val buscar: ImageView = findViewById(R.id.lupa)
+        buscar.setOnClickListener(View.OnClickListener {
+            val go_catalogo = Intent(this, CatalogoActivity::class.java)
+            startActivity(go_catalogo)
+        })
+
+        val iconoPlanta: ImageView = findViewById(R.id.imageView5)
+        iconoPlanta.setOnClickListener(View.OnClickListener {
+            val go_product = Intent(this, ProductoActivity::class.java)
+            startActivity(go_product)
+        })
+
+        // Menu Inferior
         // Catalogo
         val iconoMenu: ImageView = findViewById(R.id.menu)
         iconoMenu.setOnClickListener(View.OnClickListener {
@@ -30,11 +43,11 @@ class CatalogoActivity : AppCompatActivity() {
             startActivity(go_home)
         })
         // User
-        // val iconoUser: ImageView = findViewById(R.id.user)
-        // iconoUser.setOnClickListener(View.OnClickListener {
-        // val go_user = Intent(this, MainUser::class.java)
-        //     startActivity(go_home)
-        // })
+        val iconoUser: ImageView = findViewById(R.id.user)
+        iconoUser.setOnClickListener(View.OnClickListener {
+            val go_user = Intent(this, UserActivity::class.java)
+            startActivity(go_user)
+        })
         // Carro
         val iconoCarro: ImageView = findViewById(R.id.carro)
         iconoCarro.setOnClickListener(View.OnClickListener {

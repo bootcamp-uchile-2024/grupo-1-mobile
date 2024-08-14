@@ -3,6 +3,7 @@ package com.example.plantopia
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -15,8 +16,19 @@ class ProductoActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_producto)
 
-        // Menu Inferior
+        val botonAlCarro: Button = findViewById(R.id.button2)
+        botonAlCarro.setOnClickListener(View.OnClickListener {
+            val add_carro = Intent(this, CarritoActivity::class.java)
+            startActivity(add_carro)
+        })
 
+        val buscar: ImageView = findViewById(R.id.lupa)
+        buscar.setOnClickListener(View.OnClickListener {
+            val go_catalogo = Intent(this, CatalogoActivity::class.java)
+            startActivity(go_catalogo)
+        })
+
+        // Menu Inferior
         // Catalogo
         val iconoMenu: ImageView = findViewById(R.id.menu)
         iconoMenu.setOnClickListener(View.OnClickListener {
@@ -30,11 +42,11 @@ class ProductoActivity : AppCompatActivity() {
             startActivity(go_home)
         })
         // User
-        // val iconoUser: ImageView = findViewById(R.id.user)
-        // iconoUser.setOnClickListener(View.OnClickListener {
-        // val go_user = Intent(this, MainUser::class.java)
-        //     startActivity(go_home)
-        // })
+        val iconoUser: ImageView = findViewById(R.id.user)
+        iconoUser.setOnClickListener(View.OnClickListener {
+            val go_user = Intent(this, UserActivity::class.java)
+             startActivity(go_user)
+        })
         // Carro
         val iconoCarro: ImageView = findViewById(R.id.carro)
         iconoCarro.setOnClickListener(View.OnClickListener {

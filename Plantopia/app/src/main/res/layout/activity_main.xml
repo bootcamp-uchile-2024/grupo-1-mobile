@@ -13,7 +13,7 @@
         android:id="@+id/Busqueda"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/rounded_edit"
         android:ems="10"
         android:inputType="text"
@@ -21,19 +21,17 @@
         android:text="Buscar"
         android:translationZ="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imagenInicio"
         android:layout_width="467dp"
         android:layout_height="276dp"
-        android:translationZ="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/plantas_ini"/>
+        app:srcCompat="@drawable/plantas_ini" />
 
     <LinearLayout
         android:id="@+id/recomendaciones"
@@ -42,7 +40,7 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+        app:layout_constraintTop_toBottomOf="@+id/imagenInicio">
 
         <TextView
             android:id="@+id/textView2"
@@ -59,11 +57,12 @@
             android:gravity="center_horizontal"
             android:orientation="horizontal">
 
-            <androidx.constraintlayout.utils.widget.MockView
-                android:id="@+id/mockView4"
+            <ImageView
+                android:id="@+id/imageView4"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                app:srcCompat="@drawable/plant" />
 
             <androidx.constraintlayout.utils.widget.MockView
                 android:id="@+id/mockView3"
@@ -210,5 +209,16 @@
             android:paddingBottom="10dp"
             app:srcCompat="@drawable/baseline_shopping_cart_24" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/lupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="12dp"
+        android:translationZ="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/Busqueda"
+        app:layout_constraintTop_toTopOf="@+id/Busqueda"
+        app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

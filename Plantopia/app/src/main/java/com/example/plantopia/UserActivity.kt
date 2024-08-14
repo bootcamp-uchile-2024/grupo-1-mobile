@@ -9,31 +9,21 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
+class UserActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-
-        val buscar: ImageView = findViewById(R.id.lupa)
-        buscar.setOnClickListener(View.OnClickListener {
-            val go_catalogo = Intent(this, CatalogoActivity::class.java)
-            startActivity(go_catalogo)
-        })
-
-        val iconoPlanta: ImageView = findViewById(R.id.imageView4)
-        iconoPlanta.setOnClickListener(View.OnClickListener {
-            val go_product = Intent(this, ProductoActivity::class.java)
-            startActivity(go_product)
-        })
+        setContentView(R.layout.activity_user)
 
         // Menu Inferior
+
         // Catalogo
         val iconoMenu: ImageView = findViewById(R.id.menu)
         iconoMenu.setOnClickListener(View.OnClickListener {
             val go_menu = Intent(this, CatalogoActivity::class.java)
             startActivity(go_menu)
         })
+
         // Home
         val iconoHome: ImageView = findViewById(R.id.home)
         iconoHome.setOnClickListener(View.OnClickListener {
@@ -52,6 +42,5 @@ class MainActivity : AppCompatActivity() {
             val go_carro = Intent(this, CarritoActivity::class.java)
             startActivity(go_carro)
         })
-
     }
 }
