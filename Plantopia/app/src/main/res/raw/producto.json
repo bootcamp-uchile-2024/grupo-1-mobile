@@ -1,10 +1,10 @@
  [{ "id": "123",
     "atributos": {
-      "nombre_producto": "Ficus Lyrata Grande",
+      "nombreProducto": "Ficus Lyrata Grande",
       "stock": 50,
       "precio": 59990,
       "descripcion": "El Ficus lyrata, comúnmente conocido como \"Ficus lirado\" o \"Higuera de hoja de violín\", es una planta de interior muy popular debido a sus grandes hojas distintivas y su apariencia majestuosa. Esta planta es originaria de las regiones tropicales de África occidental y se ha convertido en una favorita en la decoración de interiores moderna.\n\n",
-      "enlace_foto": "https://raw.githubusercontent.com/bootcamp-uchile-2024/grupo-1-mobile/main/src_fotos/lirata.png",
+      "url": "https://raw.githubusercontent.com/bootcamp-uchile-2024/grupo-1-mobile/main/src_fotos/lirata.png",
       "valoracion": 3.98,
       "categoria": "planta",
       "cantidadVentas": 10,
@@ -16,21 +16,184 @@
       "DificultadDeCuidado": "Intermedio",
       "Estacion": "4 estaciones"
     }},
-   { "id": "456",
+   {
+     "id": "456",
      "atributos": {
-       "nombreProducto": "Ficus Lyrata Pequeño",
-       "stock": 20,
-       "precio": 15990,
-       "descripcion": "El Ficus lyrata, comúnmente conocido como \"Ficus lirado\" o \"Higuera de hoja de violín\", es una planta de interior muy popular debido a sus grandes hojas distintivas y su apariencia majestuosa. Esta planta es originaria de las regiones tropicales de África occidental y se ha convertido en una favorita en la decoración de interiores moderna.\n\n",
-       "enlace_foto": "https://raw.githubusercontent.com/bootcamp-uchile-2024/grupo-1-mobile/main/src_fotos/lirata.png",
-       "valoracion": 5.0,
+       "nombreProducto": "Monstera Deliciosa",
+       "stock": 30,
+       "precio": 54990,
+       "descripcion": "La Monstera deliciosa, también conocida como 'Costilla de Adán', es una planta trepadora tropical famosa por sus hojas grandes y perforadas. Es ideal para interiores con luz indirecta.",
+       "url": "https://raw.githubusercontent.com/bootcamp-uchile-2024/grupo-1-mobile/main/src_fotos/Monstera%20Deliciosa.png",
+       "valoracion": 4.5,
        "categoria": "planta",
-       "cantidadVentas": 2,
-       "LuzRequerida": "Alta, no directa",
+       "cantidadVentas": 25,
+       "LuzRequerida": "Media, no directa",
+       "FrecuenciaDeRiego": "Cada 2 semanas",
+       "NivelDeHumedad": "Moderado",
+       "Habitat": "Interior",
+       "TipoDeSuelo": "Fértil, bien drenado",
+       "DificultadDeCuidado": "Bajo",
+       "Estacion": "4 estaciones"
+     }
+   },
+   {
+     "id": "567",
+     "atributos": {
+       "nombreProducto": "Pothos Dorado",
+       "stock": 100,
+       "precio": 29990,
+       "descripcion": "El Pothos dorado es una planta de interior resistente y de fácil cuidado, con hojas en forma de corazón y tonalidades verdes con manchas doradas. Perfecta para principiantes.",
+       "url": "https://raw.githubusercontent.com/bootcamp-uchile-2024/grupo-1-mobile/main/src_fotos/Pothos%20Dorado.png",
+       "valoracion": 4.7,
+       "categoria": "planta",
+       "cantidadVentas": 40,
+       "LuzRequerida": "Baja a media",
        "FrecuenciaDeRiego": "Semanal",
-       "NivelDeHumedad":  "Bajo",
+       "NivelDeHumedad": "Moderado",
+       "Habitat": "Interior",
+       "TipoDeSuelo": "Básico",
+       "DificultadDeCuidado": "Muy bajo",
+       "Estacion": "4 estaciones"
+     }
+   },
+   {
+     "id": "678",
+     "atributos": {
+       "nombreProducto": "Palmera Areca",
+       "stock": 20,
+       "precio": 79990,
+       "descripcion": "La Palmera Areca es una planta elegante con frondas largas y arqueadas, que añade un toque tropical a cualquier interior. Requiere espacios amplios.",
+       "url": "https://raw.githubusercontent.com/bootcamp-uchile-2024/grupo-1-mobile/main/src_fotos/Palmera%20Areca.png",
+       "valoracion": 4.2,
+       "categoria": "planta",
+       "cantidadVentas": 15,
+       "LuzRequerida": "Alta, indirecta",
+       "FrecuenciaDeRiego": "Cada 10 días",
+       "NivelDeHumedad": "Alto",
+       "Habitat": "Interior",
+       "TipoDeSuelo": "Fértil, bien drenado",
+       "DificultadDeCuidado": "Intermedio",
+       "Estacion": "Primavera y verano"
+     }
+   },
+   {
+     "id": "789",
+     "atributos": {
+       "nombreProducto": "Cactus Euphorbia",
+       "stock": 40,
+       "precio": 49990,
+       "descripcion": "La Euphorbia es una planta suculenta que recuerda a un cactus, con tallos espinosos y forma escultórica. Es una opción popular para aquellos que buscan una planta de bajo mantenimiento.",
+       "url": "https://raw.githubusercontent.com/bootcamp-uchile-2024/grupo-1-mobile/main/src_fotos/Cactus%20Euphorbia.png",
+       "valoracion": 4.3,
+       "categoria": "planta",
+       "cantidadVentas": 20,
+       "LuzRequerida": "Alta, directa",
+       "FrecuenciaDeRiego": "Cada 3 semanas",
+       "NivelDeHumedad": "Bajo",
+       "Habitat": "Interior",
+       "TipoDeSuelo": "Arenoso, bien drenado",
+       "DificultadDeCuidado": "Muy bajo",
+       "Estacion": "Verano"
+     }
+   },
+   {
+     "id": "890",
+     "atributos": {
+       "nombreProducto": "Ficus Benjamina",
+       "stock": 60,
+       "precio": 64990,
+       "descripcion": "El Ficus benjamina, conocido como 'Higuera llorona', es una planta de interior clásica con hojas pequeñas y brillantes. Es ideal para ambientes con luz indirecta.",
+       "url": "https://raw.githubusercontent.com/bootcamp-uchile-2024/grupo-1-mobile/main/src_fotos/Ficus%20Benjamina.png",
+       "valoracion": 4.1,
+       "categoria": "planta",
+       "cantidadVentas": 35,
+       "LuzRequerida": "Media, indirecta",
+       "FrecuenciaDeRiego": "Cada 10 días",
+       "NivelDeHumedad": "Moderado",
        "Habitat": "Interior",
        "TipoDeSuelo": "Básico",
        "DificultadDeCuidado": "Intermedio",
        "Estacion": "4 estaciones"
-     }}]
+     }
+   },
+   {
+     "id": "1234",
+     "atributos": {
+       "nombreProducto": "Helecho de Boston",
+       "stock": 25,
+       "precio": 45990,
+       "descripcion": "El Helecho de Boston es una planta de interior colgante con frondas verdes y arqueadas, ideal para añadir un toque natural a cualquier espacio.",
+       "url": "https://raw.githubusercontent.com/bootcamp-uchile-2024/grupo-1-mobile/main/src_fotos/Helecho%20de%20Boston.png",
+       "valoracion": 4.6,
+       "categoria": "planta",
+       "cantidadVentas": 18,
+       "LuzRequerida": "Media, indirecta",
+       "FrecuenciaDeRiego": "Cada 5 días",
+       "NivelDeHumedad": "Alto",
+       "Habitat": "Interior",
+       "TipoDeSuelo": "Ácido, bien drenado",
+       "DificultadDeCuidado": "Intermedio",
+       "Estacion": "4 estaciones"
+     }
+   },
+   {
+     "id": "2345",
+     "atributos": {
+       "nombreProducto": "Calathea Orbifolia",
+       "stock": 15,
+       "precio": 69990,
+       "descripcion": "La Calathea orbifolia es una planta de interior con hojas anchas y rayadas que se mueven según la luz del día. Es ideal para lugares con luz indirecta.",
+       "url": "https://raw.githubusercontent.com/bootcamp-uchile-2024/grupo-1-mobile/main/src_fotos/Calathea%20Orbifolia.png",
+       "valoracion": 4.4,
+       "categoria": "planta",
+       "cantidadVentas": 12,
+       "LuzRequerida": "Baja a media",
+       "FrecuenciaDeRiego": "Cada 7 días",
+       "NivelDeHumedad": "Alto",
+       "Habitat": "Interior",
+       "TipoDeSuelo": "Fértil, bien drenado",
+       "DificultadDeCuidado": "Intermedio",
+       "Estacion": "4 estaciones"
+     }
+   },
+   {
+     "id": "3456",
+     "atributos": {
+       "nombreProducto": "Dracaena Marginata",
+       "stock": 35,
+       "precio": 44990,
+       "descripcion": "La Dracaena marginata es una planta de interior con hojas largas y delgadas en tonos verde oscuro y bordes rojos. Es fácil de mantener y resistente.",
+       "url": "https://raw.githubusercontent.com/bootcamp-uchile-2024/grupo-1-mobile/main/src_fotos/Dracaena%20Marginata.png",
+       "valoracion": 4.3,
+       "categoria": "planta",
+       "cantidadVentas": 28,
+       "LuzRequerida": "Baja a media",
+       "FrecuenciaDeRiego": "Cada 2 semanas",
+       "NivelDeHumedad": "Bajo",
+       "Habitat": "Interior",
+       "TipoDeSuelo": "Básico",
+       "DificultadDeCuidado": "Bajo",
+       "Estacion": "4 estaciones"
+     }
+   },
+   {
+     "id": "4567",
+     "atributos": {
+       "nombreProducto": "Lirio de la Paz",
+       "stock": 75,
+       "precio": 34990,
+       "descripcion": "El Lirio de la Paz es una planta de interior que destaca por sus flores blancas y su capacidad para purificar el aire. Es fácil de cuidar y resistente.",
+       "url": "https://raw.githubusercontent.com/bootcamp-uchile-2024/grupo-1-mobile/main/src_fotos/lirio_paz.png",
+       "valoracion": 4.7,
+       "categoria": "planta",
+       "cantidadVentas": 45,
+       "LuzRequerida": "Baja a media",
+       "FrecuenciaDeRiego": "Semanal",
+       "NivelDeHumedad": "Moderado",
+       "Habitat": "Interior",
+       "TipoDeSuelo": "Fértil, bien drenado",
+       "DificultadDeCuidado": "Bajo",
+       "Estacion": "4 estaciones"
+     }
+   }
+ ]

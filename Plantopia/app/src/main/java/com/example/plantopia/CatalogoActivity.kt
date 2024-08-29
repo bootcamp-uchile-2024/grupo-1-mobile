@@ -44,22 +44,17 @@ class CatalogoActivity : AppCompatActivity() {
         val jsonString = filePath.bufferedReader().use{it.readText()}
 
         // Clase
-        data class Producto(val id_producto: String, val nombre_producto: String, val descripcion: String,
-                            val enlace_foto: String, var inventario: Int)
+        data class Producto(val nombreProducto: String, val stock: Int, val precio: Int,
+                            val descripcion: String, val url: String, val valoracion: Float,
+                            val categoria: String, val LuzRequerida: String,
+                            val FrecuenciaDeRiego: String, val NivelDeHumedad: String,
+                            val Habitat: String, val TipoDeSuelo: String,
+                            val DificultadDeCuidado: String, val Estacion: String)
 
         data class Productos(val id: String, val atributos: Producto)
 
         val gson = GsonBuilder().create()
         val lista_productos = gson.fromJson(jsonString, Array<Productos>::class.java).toList()
-
-        // Testeo productos lectura
-        // val largo_lista = lista_productos.size
-        // println("Hay $largo_lista productos disponibles")
-        // var primer_prod = lista_productos[0].atributos.nombre_producto
-        // println("El primer producto es: $primer_prod")
-        // println(lista_productos[0])
-        // val texto_titulo: TextView = findViewById(R.id.producto)
-        // texto_titulo.text = primer_prod
 
         for (i in 0 until lista_productos.size){
 
@@ -86,28 +81,53 @@ class CatalogoActivity : AppCompatActivity() {
 
             val fotoProducto = ImageView(this)
 
-            val strFotoProducto = lista_productos[i].atributos.enlace_foto
+            val strFotoProducto = lista_productos[i].atributos.url
             Picasso.get()
                 .load(strFotoProducto)
                 .resize(400,400)
                 .centerCrop()
                 .into(fotoProducto)
 
-            val texto_producto: String = lista_productos[i].atributos.nombre_producto
+            val texto_producto: String = lista_productos[i].atributos.nombreProducto
             val producto: TextView = TextView(this)
             producto.text = texto_producto
+
+            val texto_categoria: String = lista_productos[i].atributos.categoria
+            val categoria: TextView = TextView(this)
+            categoria.text = texto_categoria
+
+            val texto_precio: String = lista_productos[i].atributos.precio.toString()
+            val precio: TextView = TextView(this)
+            precio.text = "$" + texto_precio
 
             val viewButton: Button = Button(this)
             viewButton.text = "Ver detalle"
 
             viewButton.setOnClickListener(View.OnClickListener {
                 val go_product = Intent(this, ProductoActivity::class.java)
+                go_product.putExtra("texto_producto", lista_productos[i].atributos.nombreProducto)
+                go_product.putExtra("texto_categoria", lista_productos[i].atributos.categoria)
+                go_product.putExtra("texto_precio", lista_productos[i].atributos.precio.toString())
+                go_product.putExtra("texto_descripcion", lista_productos[i].atributos.descripcion)
+                go_product.putExtra("url", lista_productos[i].atributos.url)
+                go_product.putExtra("valoracion", lista_productos[i].atributos.valoracion.toString())
+                go_product.putExtra("luz_req", lista_productos[i].atributos.LuzRequerida)
+                go_product.putExtra("frec_riego", lista_productos[i].atributos.FrecuenciaDeRiego)
+                go_product.putExtra("humedad_rec", lista_productos[i].atributos.NivelDeHumedad)
+                go_product.putExtra("habitat", lista_productos[i].atributos.Habitat)
+                go_product.putExtra("suelo", lista_productos[i].atributos.TipoDeSuelo)
+                go_product.putExtra("cuidado", lista_productos[i].atributos.DificultadDeCuidado)
+                go_product.putExtra("estacion", lista_productos[i].atributos.Estacion)
                 startActivity(go_product)
             })
+
+
 
             contenedorH.addView(fotoProducto)
             contenedorH.addView(contenedorV)
             contenedorV.addView(producto)
+            contenedorV.addView(categoria)
+            contenedorV.addView(precio)
             contenedorV.addView(viewButton)
 
             contenedorH.setPadding(40,40,40,40)

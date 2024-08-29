@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="#054B17"
@@ -66,15 +67,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/contenedor_listaProductos"
+    <ScrollView
         android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_height="700dp"
         android:layout_marginTop="120dp"
-        android:orientation="vertical"
+        android:layout_marginBottom="120dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/contenedor_listaProductos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
 
     <ImageView
         android:id="@+id/lupa"
