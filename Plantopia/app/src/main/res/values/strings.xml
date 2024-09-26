@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Plantopia</string>
+    <string name="string_buscar">Buscar</string>
+    <string name="recomendaciones_string">Tus Recomendaciones</string>
+    <string name="productos_de_temporada">Productos de Temporada</string>
+    <string name="string_losMasVendidos">Los más Vendidos\n</string>
+    <string name="string_lista">Lista de Productos\n</string>
+    <string name="string_pagar">Pagar</string>
 </resources>

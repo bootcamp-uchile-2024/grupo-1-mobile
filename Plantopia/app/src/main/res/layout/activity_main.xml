@@ -10,7 +10,7 @@
 
 
     <EditText
-        android:id="@+id/Busqueda"
+        android:id="@+id/editText_buscar"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -18,7 +18,7 @@
         android:ems="10"
         android:inputType="text"
         android:padding="10dp"
-        android:text="Buscar"
+        android:text="@string/string_buscar"
         android:translationZ="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
@@ -26,7 +26,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imagenInicio"
+        android:id="@+id/imageView_inicio"
         android:layout_width="467dp"
         android:layout_height="276dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,31 +34,32 @@
         app:srcCompat="@drawable/plantas_ini" />
 
     <LinearLayout
-        android:id="@+id/recomendaciones"
+        android:id="@+id/LinearLayout_home"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagenInicio">
+        app:layout_constraintTop_toBottomOf="@+id/imageView_inicio">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView_recomendaciones"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:paddingTop="10dp"
             android:paddingEnd="10dp"
-            android:text="Tus Recomendaciones"
+            android:text="@string/recomendaciones_string"
             android:textSize="15dp" />
 
         <LinearLayout
+            android:id="@+id/linearLayout_recomendaciones"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/imageView_plantaTest"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_weight="1"
@@ -85,15 +86,16 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView_temporada"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:paddingTop="10dp"
             android:paddingEnd="10dp"
-            android:text="Productos de Temporada"
+            android:text="@string/productos_de_temporada"
             android:textSize="15dp" />
 
         <LinearLayout
+            android:id="@+id/linearLayout_temporada"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
@@ -126,15 +128,16 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView_masVendidos"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:paddingTop="10dp"
             android:paddingEnd="10dp"
-            android:text="Los Más Vendidos"
+            android:text="@string/string_losMasVendidos"
             android:textSize="15dp" />
 
         <LinearLayout
+            android:id="@+id/linearLayout_masVendidos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
@@ -168,6 +171,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout_menuHome"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="#054B17"
@@ -178,7 +182,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/menu"
+            android:id="@+id/imageView_menu"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -186,7 +190,7 @@
             app:srcCompat="@drawable/baseline_menu_24" />
 
         <ImageView
-            android:id="@+id/home"
+            android:id="@+id/imageView_home"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -194,7 +198,7 @@
             app:srcCompat="@drawable/baseline_home_24" />
 
         <ImageView
-            android:id="@+id/user"
+            android:id="@+id/imageView_user"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -202,7 +206,7 @@
             app:srcCompat="@drawable/baseline_account_circle_24" />
 
         <ImageView
-            android:id="@+id/carro"
+            android:id="@+id/imageView_carro"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -211,14 +215,14 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/lupa"
+        android:id="@+id/imageView_buscar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
         android:layout_marginEnd="12dp"
         android:translationZ="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/Busqueda"
-        app:layout_constraintTop_toTopOf="@+id/Busqueda"
+        app:layout_constraintEnd_toEndOf="@+id/editText_buscar"
+        app:layout_constraintTop_toTopOf="@+id/editText_buscar"
         app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

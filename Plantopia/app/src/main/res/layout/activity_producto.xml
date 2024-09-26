@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/Busqueda"
+        android:id="@+id/editText_buscar"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -24,10 +24,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
+        android:id="@+id/scrollView_fichaProducto"
         android:layout_width="wrap_content"
         android:layout_height="700dp"
         android:layout_marginTop="120dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout_menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -49,35 +50,35 @@
                 android:textStyle="bold|italic" />
 
             <TextView
-                android:id="@+id/category"
+                android:id="@+id/textView_category"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <TextView
-                android:id="@+id/precio_producto"
+                android:id="@+id/textView_precio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             <ImageView
-                android:id="@+id/fotoProducto"
+                android:id="@+id/imageView_producto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
                 app:srcCompat="@drawable/plant" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/button_addCarrito"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="36dp"
                 android:text="Agregar al Carrito" />
 
             <TextView
-                android:id="@+id/description"
+                android:id="@+id/textView_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Planta digital :)" />
@@ -85,7 +86,7 @@
     </ScrollView>
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/linearLayout_menu"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="#054B17"
@@ -96,7 +97,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/menu"
+            android:id="@+id/imageView_menu"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -104,7 +105,7 @@
             app:srcCompat="@drawable/baseline_menu_24" />
 
         <ImageView
-            android:id="@+id/home"
+            android:id="@+id/imageView_home"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -112,7 +113,7 @@
             app:srcCompat="@drawable/baseline_home_24" />
 
         <ImageView
-            android:id="@+id/user"
+            android:id="@+id/imageView_user"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -120,7 +121,7 @@
             app:srcCompat="@drawable/baseline_account_circle_24" />
 
         <ImageView
-            android:id="@+id/carro"
+            android:id="@+id/imageView_carro"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -129,14 +130,14 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/lupa"
+        android:id="@+id/imageView_buscar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
         android:layout_marginEnd="12dp"
         android:translationZ="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/Busqueda"
-        app:layout_constraintTop_toTopOf="@+id/Busqueda"
+        app:layout_constraintEnd_toEndOf="@+id/editText_buscar"
+        app:layout_constraintTop_toTopOf="@+id/editText_buscar"
         app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,10 +1,7 @@
 package com.example.plantopia
 
 import android.content.Intent
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import android.os.Bundle
-import android.provider.ContactsContract.CommonDataKinds.Im
 import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
@@ -14,14 +11,8 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.utils.widget.MockView
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.google.gson.GsonBuilder
 import com.squareup.picasso.Picasso
-import java.io.File
-import java.io.InputStream
-import java.net.URL
 
 class CatalogoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +20,7 @@ class CatalogoActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_catalogo)
 
-        val buscar: ImageView = findViewById(R.id.lupa)
+        val buscar: ImageView = findViewById(R.id.imageView_buscar)
         buscar.setOnClickListener(View.OnClickListener {
             val go_catalogo = Intent(this, CatalogoActivity::class.java)
             startActivity(go_catalogo)
@@ -136,25 +127,25 @@ class CatalogoActivity : AppCompatActivity() {
 
         // Menu Inferior
         // Catalogo
-        val iconoMenu: ImageView = findViewById(R.id.menu)
+        val iconoMenu: ImageView = findViewById(R.id.imageView_menu)
         iconoMenu.setOnClickListener(View.OnClickListener {
             val go_menu = Intent(this, CatalogoActivity::class.java)
             startActivity(go_menu)
         })
         // Home
-        val iconoHome: ImageView = findViewById(R.id.home)
+        val iconoHome: ImageView = findViewById(R.id.imageView_home)
         iconoHome.setOnClickListener(View.OnClickListener {
             val go_home = Intent(this, MainActivity::class.java)
             startActivity(go_home)
         })
         // User
-        val iconoUser: ImageView = findViewById(R.id.user)
+        val iconoUser: ImageView = findViewById(R.id.imageView_user)
         iconoUser.setOnClickListener(View.OnClickListener {
             val go_user = Intent(this, UserActivity::class.java)
             startActivity(go_user)
         })
         // Carro
-        val iconoCarro: ImageView = findViewById(R.id.carro)
+        val iconoCarro: ImageView = findViewById(R.id.imageView_carro)
         iconoCarro.setOnClickListener(View.OnClickListener {
             val go_carro = Intent(this, CarritoActivity::class.java)
             startActivity(go_carro)

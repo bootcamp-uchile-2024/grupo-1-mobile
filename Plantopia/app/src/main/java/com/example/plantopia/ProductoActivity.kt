@@ -37,13 +37,13 @@ class ProductoActivity : AppCompatActivity() {
         // Nombre, categoria y precio
         val producto: TextView = findViewById(R.id.nombre_producto)
         producto.text = nombre_prod
-        val precio_prod: TextView = findViewById(R.id.precio_producto)
+        val precio_prod: TextView = findViewById(R.id.textView_precio)
         precio_prod.text = "$" + precio
-        val cat: TextView = findViewById(R.id.category)
+        val cat: TextView = findViewById(R.id.textView_category)
         cat.text = "Categoría: " + nombre_cat + " - Valoración: " + valoracion + "/10"
 
         // Imagen
-        val fotoProducto: ImageView = findViewById(R.id.fotoProducto)
+        val fotoProducto: ImageView = findViewById(R.id.imageView_producto)
         val strFotoProducto = image_url
         Picasso.get()
             .load(strFotoProducto)
@@ -52,7 +52,7 @@ class ProductoActivity : AppCompatActivity() {
             .into(fotoProducto)
 
         // Descripciones
-        val descr: TextView = findViewById(R.id.description)
+        val descr: TextView = findViewById(R.id.textView_description)
         descr.text = descripcion
 
         // if planta
@@ -81,13 +81,13 @@ class ProductoActivity : AppCompatActivity() {
         contenedorAtributos.addView(care)
         contenedorAtributos.addView(season)
 
-        val botonAlCarro: Button = findViewById(R.id.button2)
+        val botonAlCarro: Button = findViewById(R.id.button_addCarrito)
         botonAlCarro.setOnClickListener(View.OnClickListener {
             val add_carro = Intent(this, CarritoActivity::class.java)
             startActivity(add_carro)
         })
 
-        val buscar: ImageView = findViewById(R.id.lupa)
+        val buscar: ImageView = findViewById(R.id.imageView_buscar)
         buscar.setOnClickListener(View.OnClickListener {
             val go_catalogo = Intent(this, CatalogoActivity::class.java)
             startActivity(go_catalogo)
@@ -95,25 +95,25 @@ class ProductoActivity : AppCompatActivity() {
 
         // Menu Inferior
         // Catalogo
-        val iconoMenu: ImageView = findViewById(R.id.menu)
+        val iconoMenu: ImageView = findViewById(R.id.imageView_menu)
         iconoMenu.setOnClickListener(View.OnClickListener {
             val go_menu = Intent(this, CatalogoActivity::class.java)
             startActivity(go_menu)
         })
         // Home
-        val iconoHome: ImageView = findViewById(R.id.home)
+        val iconoHome: ImageView = findViewById(R.id.imageView_home)
         iconoHome.setOnClickListener(View.OnClickListener {
             val go_home = Intent(this, MainActivity::class.java)
             startActivity(go_home)
         })
         // User
-        val iconoUser: ImageView = findViewById(R.id.user)
+        val iconoUser: ImageView = findViewById(R.id.imageView_user)
         iconoUser.setOnClickListener(View.OnClickListener {
             val go_user = Intent(this, UserActivity::class.java)
              startActivity(go_user)
         })
         // Carro
-        val iconoCarro: ImageView = findViewById(R.id.carro)
+        val iconoCarro: ImageView = findViewById(R.id.imageView_carro)
         iconoCarro.setOnClickListener(View.OnClickListener {
             val go_carro = Intent(this, CarritoActivity::class.java)
             startActivity(go_carro)
