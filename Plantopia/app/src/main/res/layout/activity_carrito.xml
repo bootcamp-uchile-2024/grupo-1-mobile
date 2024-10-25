@@ -10,13 +10,14 @@
     <EditText
         android:id="@+id/editText_buscar"
         android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/rounded_edit"
         android:ems="10"
         android:inputType="text"
         android:padding="10dp"
         android:text="Buscar"
+        android:textSize="20sp"
         android:translationZ="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
@@ -27,46 +28,68 @@
         android:id="@+id/textView_listaCompras"
         android:layout_width="346dp"
         android:layout_height="34dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="12dp"
         android:text="@string/string_lista"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView_carroFondo"
-        android:layout_width="274dp"
-        android:layout_height="280dp"
-        android:layout_marginTop="132dp"
-        android:alpha="0.1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_action_name" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="131dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="432dp"
-        android:text="TOTAL $$$"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_buscar" />
+
+    <ScrollView
+        android:id="@+id/scrollView_recicler"
+        android:layout_width="346dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_listaCompras">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_carroCompras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView_recicler">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="131dp"
+            android:layout_height="31dp"
+            android:text="Total $"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_suma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textSize="20sp" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/button_pagar"
         android:layout_width="157dp"
         android:layout_height="66dp"
-        android:layout_marginTop="536dp"
+        android:layout_marginTop="12dp"
         android:text="@string/string_pagar"
         android:textIsSelectable="false"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <LinearLayout
         android:id="@+id/linearLayout_menu"

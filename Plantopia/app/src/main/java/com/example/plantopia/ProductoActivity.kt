@@ -1,5 +1,7 @@
 package com.example.plantopia
 
+import android.app.Activity
+import android.app.Activity.RESULT_OK
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -7,15 +9,17 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import com.example.plantopia.R.layout.activity_producto
 import com.squareup.picasso.Picasso
 
 class ProductoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_producto)
+        setContentView(activity_producto)
 
         // Heredar productos
         val nombre_prod = intent.getStringExtra("texto_producto").toString()
@@ -119,5 +123,25 @@ class ProductoActivity : AppCompatActivity() {
             startActivity(go_carro)
         })
 
+        // Agregar producto
+        val add_carro = findViewById<Button>(R.id.button_addCarrito)
+        add_carro.setOnClickListener {
+            onAddButtonClick(it)
+        }
+
     }
+
+    fun onAddButtonClick(view: View) {
+        // Obtener los valores de los productos a agregar al carrito
+        val nombreProducto = findViewById<TextView>(R.id.nombre_producto).text.toString()
+        val precioProducto = findViewById<TextView>(R.id.textView_precio).text.toString()
+
+        val go_product = Intent(this, CarritoActivity::class.java)
+        go_product.putExtra("nombreProducto", nombreProducto)
+        go_product.putExtra("precioProducto", precioProducto)
+
+        startActivity(go_product)
+        Toast.makeText(this, "$nombreProducto agregado", Toast.LENGTH_LONG).show()
+    }
+
 }
