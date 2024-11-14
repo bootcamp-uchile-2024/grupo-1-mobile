@@ -1,19 +1,20 @@
-package com.example.plantopia
+package com.example.plantopia.activities
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
-import android.widget.Toast
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.plantopia.adapter.CarritoAdapter
 import com.example.plantopia.data.CarritoItem
-import androidx.activity.result.ActivityResult
+import com.example.plantopia.R
 import com.example.plantopia.R.layout.activity_carrito
+import com.example.plantopia.openhelper.CarritoOpenHelper
 
 class CarritoActivity : AppCompatActivity() {
 
@@ -21,6 +22,7 @@ class CarritoActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var carritoAdapter: CarritoAdapter
     private lateinit var layoutManager: RecyclerView.LayoutManager
+    private lateinit var itemList: List<CarritoItem>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,14 +34,7 @@ class CarritoActivity : AppCompatActivity() {
         recyclerView.layoutManager = layoutManager
         carritoAdapter = CarritoAdapter(listOf())
         recyclerView.adapter = carritoAdapter
-
-        val nombre_prod = intent.getStringExtra("nombreProducto").toString()
-        val precio_prod = intent.getStringExtra("precioProducto").toString()
-
-        val newCarritoItem = CarritoItem(nombre_prod, precio_prod)
-
-        carritoAdapter.addItem(newCarritoItem)
-        carritoAdapter.notifyItemInserted(carritoAdapter.itemCount - 1)
+        registerForContextMenu(recyclerView)
 
         // Barra Superior Busqueda
         val buscar: ImageView = findViewById(R.id.imageView_buscar)
@@ -75,6 +70,44 @@ class CarritoActivity : AppCompatActivity() {
             startActivity(go_carro)
         })
 
+    }
+    @SuppressLint("NotifyDataSetChanged")
+    override fun onResume() {
+        super.onResume()
+
+        val dbHelper= CarritoOpenHelper(this)
+        val db = dbHelper.readableDatabase
+
+        var total_view: TextView = findViewById(R.id.textView_suma)
+        var total = 0.0
+
+
+        val cursor = db.query("carrito", null, null, null, null, null, null)
+        itemList = mutableListOf()
+        with(cursor) {
+            while (moveToNext()) {
+                val name = getString(1)
+                val price = getString(2)
+                itemList += CarritoItem(name, price)
+                total += price.toDouble()
+            }
+        }
+        cursor.close()
+        db.close()
+
+        // Actualizar el textview con el total
+        total_view.text = total.toString()
+
+        carritoAdapter.clear()
+        carritoAdapter.itemList = itemList
+        carritoAdapter.notifyDataSetChanged()
+    }
+
+    fun onPayButtonClick(view: View) {
+        val total = findViewById<TextView>(R.id.textView_suma).text.toString()
+        val intent = Intent(this, DondeActivity::class.java)
+        intent.putExtra("sumaPlantas", total)
+        startActivity(intent)
     }
 
 }

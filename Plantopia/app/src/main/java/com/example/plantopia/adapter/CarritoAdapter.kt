@@ -10,10 +10,12 @@ import com.example.plantopia.data.CarritoItem
 
 class CarritoAdapter(var itemList: List<CarritoItem>):
     // Clase adapter para recycler view
+
     RecyclerView.Adapter<CarritoAdapter.MyViewHolder>() {
 
         // Clase interna para el ViewHolder
-        class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
+        class MyViewHolder(itemView: View) :
+            RecyclerView.ViewHolder(itemView){
             val productoCarrito: TextView = itemView.findViewById(R.id.textView_NombreProductoCarrito)
             val precioCarrito: TextView = itemView.findViewById(R.id.textView_PrecioCarrito)
         }
@@ -34,14 +36,20 @@ class CarritoAdapter(var itemList: List<CarritoItem>):
         // Devuelve el número de elementos en la lista
         override fun getItemCount() = itemList.size
 
-        // Actualiza la lista de elementos
-        fun setDataList(data: List<CarritoItem>){
-            itemList = data
-        }
-
         // Agrega un nuevo elemento a la lista
         fun addItem(item: CarritoItem) {
             itemList += item
             notifyItemInserted(getItemCount() - 1)
+        }
+
+        // Obtiene un elemento de la lista
+        fun getItem(position: Int): CarritoItem {
+        return itemList[position]
+        }
+
+        // Borra todos los elementos de la lista
+        fun clear() {
+            itemList = listOf()
+            notifyDataSetChanged()
         }
 }

@@ -7,4 +7,25 @@
     <string name="string_lista">Lista de Productos en Carrito\n</string>
     <string name="string_pagar">Pagar</string>
     <string name="productoCarrito">productoCarrito\n</string>
+    <string name="string_donde_title">¿Dónde quieres enviar tu producto?</string>
+    <string name="string_entrega">Entrega</string>
+    <string name="string_contact">Contacto</string>
+    <string name="string_apellido">Apellido</string>
+    <string name="string_direccion">Dirección</string>
+    <string name="string_comuna">Comuna</string>
+    <string name="string_region">Región</string>
+    <string name="string_telefono">Teléfono</string>
+    <string name="string_siguiente">Siguiente</string>
+    <string name="string_forma_de_pago">Selecciona tu forma de pago</string>
+    <string name="string_total">Total</string>
+    <string name="string_envio">Costo de Envío</string>
+    <string name="string_subtotal">Sub-Total</string>
+    <string name="total_final">Total</string>
+    <string name="string_ApplePay">Paga con Apple Pay</string>
+    <string name="string_mercadoPago">Paga con Mercado Pago</string>
+    <string name="string_webPay">Paga con WebPay</string>
+    <string name="string_finalizado">¡Felicitaciones, tu compra fue finalizada!</string>
+    <string name="string_add">Agrega tus productos a tu huerto digital</string>
+    <string name="string_back">Regresa a Plantopia</string>
+    <string name="string_atras">Atras</string>
 </resources>

@@ -1,7 +1,6 @@
-package com.example.plantopia
+package com.example.plantopia.activities
 
-import android.app.Activity
-import android.app.Activity.RESULT_OK
+import android.content.ContentValues
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -12,7 +11,10 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.contentValuesOf
+import com.example.plantopia.R
 import com.example.plantopia.R.layout.activity_producto
+import com.example.plantopia.openhelper.CarritoOpenHelper
 import com.squareup.picasso.Picasso
 
 class ProductoActivity : AppCompatActivity() {
@@ -42,7 +44,7 @@ class ProductoActivity : AppCompatActivity() {
         val producto: TextView = findViewById(R.id.nombre_producto)
         producto.text = nombre_prod
         val precio_prod: TextView = findViewById(R.id.textView_precio)
-        precio_prod.text = "$" + precio
+        precio_prod.text = precio
         val cat: TextView = findViewById(R.id.textView_category)
         cat.text = "Categoría: " + nombre_cat + " - Valoración: " + valoracion + "/10"
 
@@ -136,12 +138,23 @@ class ProductoActivity : AppCompatActivity() {
         val nombreProducto = findViewById<TextView>(R.id.nombre_producto).text.toString()
         val precioProducto = findViewById<TextView>(R.id.textView_precio).text.toString()
 
+        /*
         val go_product = Intent(this, CarritoActivity::class.java)
         go_product.putExtra("nombreProducto", nombreProducto)
         go_product.putExtra("precioProducto", precioProducto)
+         */
 
-        startActivity(go_product)
-        Toast.makeText(this, "$nombreProducto agregado", Toast.LENGTH_LONG).show()
+        val dpHelper = CarritoOpenHelper(this)
+        val db = dpHelper.writableDatabase
+
+        val values = ContentValues().apply {
+            put("producto", nombreProducto)
+            put("precio", precioProducto)
+        }
+        db.insert("carrito", null, values)
+        db.close()
+
+        finish()
     }
 
 }
