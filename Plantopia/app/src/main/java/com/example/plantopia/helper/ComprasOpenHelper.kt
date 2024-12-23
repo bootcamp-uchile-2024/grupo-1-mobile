@@ -1,4 +1,4 @@
-package com.example.plantopia.openhelper
+package com.example.plantopia.helper
 
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase

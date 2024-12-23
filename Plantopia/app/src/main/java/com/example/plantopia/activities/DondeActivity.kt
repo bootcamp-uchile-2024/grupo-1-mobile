@@ -11,12 +11,13 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.plantopia.R
 import com.example.plantopia.data.CarritoItem
-import com.example.plantopia.openhelper.CarritoOpenHelper
-import com.example.plantopia.openhelper.ComprasOpenHelper
+import com.example.plantopia.helper.CarritoOpenHelper
+import com.example.plantopia.helper.ComprasOpenHelper
 
 class DondeActivity : AppCompatActivity() {
 
     private lateinit var itemList: List<CarritoItem>
+    // private lateinit var itemList_c: List<CompraItem>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

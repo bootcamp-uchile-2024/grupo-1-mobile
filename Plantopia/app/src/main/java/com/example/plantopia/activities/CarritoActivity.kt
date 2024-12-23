@@ -14,7 +14,7 @@ import com.example.plantopia.adapter.CarritoAdapter
 import com.example.plantopia.data.CarritoItem
 import com.example.plantopia.R
 import com.example.plantopia.R.layout.activity_carrito
-import com.example.plantopia.openhelper.CarritoOpenHelper
+import com.example.plantopia.helper.CarritoOpenHelper
 
 class CarritoActivity : AppCompatActivity() {
 

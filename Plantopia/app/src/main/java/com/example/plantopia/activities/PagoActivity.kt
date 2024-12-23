@@ -10,7 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.plantopia.R
 import com.example.plantopia.data.CarritoItem
-import com.example.plantopia.openhelper.CarritoOpenHelper
+import com.example.plantopia.helper.CarritoOpenHelper
 
 class PagoActivity : AppCompatActivity() {
 

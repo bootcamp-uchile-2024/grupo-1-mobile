@@ -8,13 +8,11 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.contentValuesOf
 import com.example.plantopia.R
 import com.example.plantopia.R.layout.activity_producto
-import com.example.plantopia.openhelper.CarritoOpenHelper
+import com.example.plantopia.helper.CarritoOpenHelper
 import com.squareup.picasso.Picasso
 
 class ProductoActivity : AppCompatActivity() {
@@ -64,19 +62,19 @@ class ProductoActivity : AppCompatActivity() {
         // if planta
         val contenedorAtributos: LinearLayout = findViewById(R.id.contenedor_atributos)
 
-        val luz: TextView = TextView(this)
+        val luz = TextView(this)
         luz.text = "Luz Requerida: " + luz_req
-        val riego: TextView = TextView(this)
+        val riego= TextView(this)
         riego.text = "Frecuencia de Riego: " + frec_riego
-        val hum: TextView = TextView(this)
+        val hum= TextView(this)
         hum.text = "Humedad Requerida: " + humedad_rec
-        val hab: TextView = TextView(this)
+        val hab= TextView(this)
         hab.text = "Hábitat: " + habitat
-        val soil: TextView = TextView(this)
+        val soil= TextView(this)
         soil.text = "Suelo: " + suelo
-        val care: TextView = TextView(this)
+        val care = TextView(this)
         care.text = "Dificultad de Cuidado: " + cuidado
-        val season: TextView = TextView(this)
+        val season = TextView(this)
         season.text = "Estación: " + estacion
 
         contenedorAtributos.addView(luz)

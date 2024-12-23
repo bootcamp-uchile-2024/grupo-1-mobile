@@ -54,7 +54,7 @@
     <EditText
         android:id="@+id/editText_buscar"
         android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/rounded_edit"
         android:ems="10"
@@ -67,23 +67,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ScrollView
-        android:id="@+id/scrollView_productos"
-        android:layout_width="343dp"
-        android:layout_height="516dp"
-        android:layout_marginTop="120dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout_menu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:id="@+id/contenedor_listaProductos"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
-
     <ImageView
         android:id="@+id/imageView_buscar"
         android:layout_width="wrap_content"
@@ -94,5 +77,17 @@
         app:layout_constraintEnd_toEndOf="@+id/editText_buscar"
         app:layout_constraintTop_toTopOf="@+id/editText_buscar"
         app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reciclerView_productos"
+        android:layout_width="403dp"
+        android:layout_height="512dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_buscar"
+        app:layout_constraintVertical_bias="0.507" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

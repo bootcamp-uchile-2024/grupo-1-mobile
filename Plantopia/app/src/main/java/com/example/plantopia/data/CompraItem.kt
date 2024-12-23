@@ -1,6 +1,6 @@
 package com.example.plantopia.data
 
-class CompraItem (val email_compras: String,
+data class CompraItem (val email_compras: String,
                   val nombre_compras: String,
                   val apellido_compras: String,
                   val direccion_compras: String,

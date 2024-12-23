@@ -1,6 +1,4 @@
- [{ "id": "123",
-    "atributos": {
-      "nombreProducto": "Ficus Lyrata Grande",
+ [ {"nombreProducto": "Ficus Lyrata Grande",
       "stock": 50,
       "precio": 59990,
       "descripcion": "El Ficus lyrata, comúnmente conocido como \"Ficus lirado\" o \"Higuera de hoja de violín\", es una planta de interior muy popular debido a sus grandes hojas distintivas y su apariencia majestuosa. Esta planta es originaria de las regiones tropicales de África occidental y se ha convertido en una favorita en la decoración de interiores moderna.\n\n",
@@ -15,11 +13,8 @@
       "TipoDeSuelo": "Básico",
       "DificultadDeCuidado": "Intermedio",
       "Estacion": "4 estaciones"
-    }},
-   {
-     "id": "456",
-     "atributos": {
-       "nombreProducto": "Monstera Deliciosa",
+    },
+   {   "nombreProducto": "Monstera Deliciosa",
        "stock": 30,
        "precio": 54990,
        "descripcion": "La Monstera deliciosa, también conocida como 'Costilla de Adán', es una planta trepadora tropical famosa por sus hojas grandes y perforadas. Es ideal para interiores con luz indirecta.",
@@ -34,12 +29,8 @@
        "TipoDeSuelo": "Fértil, bien drenado",
        "DificultadDeCuidado": "Bajo",
        "Estacion": "4 estaciones"
-     }
-   },
-   {
-     "id": "567",
-     "atributos": {
-       "nombreProducto": "Pothos Dorado",
+     },
+   {  "nombreProducto": "Pothos Dorado",
        "stock": 100,
        "precio": 29990,
        "descripcion": "El Pothos dorado es una planta de interior resistente y de fácil cuidado, con hojas en forma de corazón y tonalidades verdes con manchas doradas. Perfecta para principiantes.",
@@ -54,12 +45,8 @@
        "TipoDeSuelo": "Básico",
        "DificultadDeCuidado": "Muy bajo",
        "Estacion": "4 estaciones"
-     }
-   },
-   {
-     "id": "678",
-     "atributos": {
-       "nombreProducto": "Palmera Areca",
+     },
+   {   "nombreProducto": "Palmera Areca",
        "stock": 20,
        "precio": 79990,
        "descripcion": "La Palmera Areca es una planta elegante con frondas largas y arqueadas, que añade un toque tropical a cualquier interior. Requiere espacios amplios.",
@@ -74,11 +61,8 @@
        "TipoDeSuelo": "Fértil, bien drenado",
        "DificultadDeCuidado": "Intermedio",
        "Estacion": "Primavera y verano"
-     }
-   },
+     },
    {
-     "id": "789",
-     "atributos": {
        "nombreProducto": "Cactus Euphorbia",
        "stock": 40,
        "precio": 49990,
@@ -94,11 +78,8 @@
        "TipoDeSuelo": "Arenoso, bien drenado",
        "DificultadDeCuidado": "Muy bajo",
        "Estacion": "Verano"
-     }
-   },
+     },
    {
-     "id": "890",
-     "atributos": {
        "nombreProducto": "Ficus Benjamina",
        "stock": 60,
        "precio": 64990,
@@ -114,11 +95,8 @@
        "TipoDeSuelo": "Básico",
        "DificultadDeCuidado": "Intermedio",
        "Estacion": "4 estaciones"
-     }
-   },
+     },
    {
-     "id": "1234",
-     "atributos": {
        "nombreProducto": "Helecho de Boston",
        "stock": 25,
        "precio": 45990,
@@ -134,11 +112,8 @@
        "TipoDeSuelo": "Ácido, bien drenado",
        "DificultadDeCuidado": "Intermedio",
        "Estacion": "4 estaciones"
-     }
-   },
+     },
    {
-     "id": "2345",
-     "atributos": {
        "nombreProducto": "Calathea Orbifolia",
        "stock": 15,
        "precio": 69990,
@@ -154,12 +129,8 @@
        "TipoDeSuelo": "Fértil, bien drenado",
        "DificultadDeCuidado": "Intermedio",
        "Estacion": "4 estaciones"
-     }
    },
-   {
-     "id": "3456",
-     "atributos": {
-       "nombreProducto": "Dracaena Marginata",
+   {   "nombreProducto": "Dracaena Marginata",
        "stock": 35,
        "precio": 44990,
        "descripcion": "La Dracaena marginata es una planta de interior con hojas largas y delgadas en tonos verde oscuro y bordes rojos. Es fácil de mantener y resistente.",
@@ -174,11 +145,8 @@
        "TipoDeSuelo": "Básico",
        "DificultadDeCuidado": "Bajo",
        "Estacion": "4 estaciones"
-     }
    },
    {
-     "id": "4567",
-     "atributos": {
        "nombreProducto": "Lirio de la Paz",
        "stock": 75,
        "precio": 34990,
@@ -195,5 +163,4 @@
        "DificultadDeCuidado": "Bajo",
        "Estacion": "4 estaciones"
      }
-   }
  ]
