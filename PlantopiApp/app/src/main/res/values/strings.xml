@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">PlantopiApp</string>
+
+    <!-- Main -->
+    <string name="string_areYouIn">¿Ya eres Plantoper?</string>
+    <string name="string_primerPaso">Inicia sesión con tu cuenta de Plantopía</string>
+    <string name="string_email">Correo electrónico</string>
+    <string name="string_ingresa_correo">Ingresa tu correo aquí</string>
+    <string name="string_password">Contraseña</string>
+    <string name="string_ingresa_contr">Ingresa tu contraseña aquí</string>
+    <string name="string_forgotPassword">¿Olvidaste tu contraseña?</string>
+    <string name="string_iniciarSesion">Iniciar Sesión</string>
+    <string name="string_aunNo">¿Aún no eres plantoper?</string>
+    <string name="string_registrate"><u>Regístrate aquí</u></string>
+    <string name="string_registrate2">Regístrate aquí</string>
+    <string name="string_google">Iniciar sesión con Google</string>
+    <string name="string_anonimo"><u>Continúa como invitado</u></string>
+
+    <!-- Registro -->
+    <string name="string_registro">Registro</string>
+    <string name="string_confirmaDatos">Confirma tus datos</string>
+    <string name="string_reg_google">Regístrate con Google</string>"
+    <string name="string_registro_local">o completa tus datos</string>
+    <string name="string_nombre_register">Nombre</string>
+    <string name="string_apellido_register">Apellido</string>
+    <string name="string_ingresa_nombre">Ingresa tu nombre aquí</string>
+    <string name="string_ingresa_apellido">Ingresa tu apellido aquí</string>
+    <string name="string_repite_contr">Confirma tu contraseña aquí</string>
+    <string name="string_repite_contr2">Repetir contraseña</string>
+    <string name="string_acepto_recomendaciones">Acepto recibir recomendaciones de cuidado</string>
+    <string name="string_acepto_terminos">Al crear una cuenta acepto la Política de privacidad y Condiciones del servicio</string>
+    <string name="string_confirmar_registro">Confirmar Registro</string>
+    <string name="string_register">Regístrate</string>
+
+    <string name="string_verifica_cuenta">Verifica tu cuenta</string>
+    <string name="string_verifica_cuenta2">Ingresa el código de verificación que envíamos a tu correo</string>
+    <string name="string_reenviar_codigo">Reenviar código</string>"
+    <string name="string_ingresa_codigo">Ingresa tu código aquí</string>
+
+    <string name="string_welcome">Bienvenido a Plantopia</string>
+    <string name="string_welcome_login">¡Bienvenido Plantoper!</string>
+
+    <!-- Recupera la contraseña-->
+    <string name="string_recupera_title">Recuperar Contraseña</string>
+    <string name="string_recupera_mail">Ingresa tu correo electrónico</string>
+    <string name="string_recupera_indicaciones">Te enviaremos un correo con las instrucciones para recuperar tu contraseña</string>
+    <string name="string_recupera_enviar">Enviar código</string>
+    <string name="string_te_enviamos">¡Te enviamos un correo electrónico!</string>
+    <string name="string_check_correo"> Revisa en tu bandeja de entrada el código que te acabamos de enviar</string>
+    <string name="string_codigo_aqui">Ingresa tu código aquí</string>
+    <string name="string_codigo_confirma">Confirmar código</string>
+    <string name="string_codigo_no_enviado">¿No recibiste el código?</string>
+    <string name="string_codigo_reenviar"><u>Reenviar correo</u></string>
+
+    <string name="string_crea_contrasena">Crea una nueva contraseña</string>
+    <string name="string_nueva_contrasena">Ingresa tu nueva contraseña</string>
+    <string name="string_confirmar_contrasena">Confirmar contraseña</string>
+
+    <string name="string_contraena_modif">¡Contraseña Modificada!</string>
+    <string name="string_contrasena_mensaje">Ya tienes una nueva contraseña, ahora puedes ver tu perfil, tus plantas y más.</string>
+    <string name="string_ini_sesion">Inicia sesión en Plantopiapp</string>
+
+
+    <!-- Home -->
+    <string name="string_greeting">"¡Buen día!"</string>
+    <string name="string_greeting_name">Plantoper</string>
+
+    <!-- Menu Superior Derecho -->
+    <string name="string_menu_notificaciones">Notificaciones</string>
+
+
+    <!-- Menu Inferior -->
+    <string name="string_bottom_nav_home">Home</string>
+    <string name="string_bottom_nav_miJardin">Mi Jardín</string>
+    <string name="string_bottom_nav_profile">Perfil</string>
+    <string name="string_bottom_nav_cart">Carrito</string>
+
+    <!-- Categoria de productos -->
+    <string name="string_plantas">Plantas</string>
+    <string name="string_maceteros">Maceteros</string>
+    <string name="string_fertilizantes">Fertilizantes</string>
+    <string name="string_sustratos">Sustratos</string>
+
+    <string name="string_filtros">Filtros</string>
+
+    <string name="string_open">Open</string>
+    <string name="string_close">Close</string>
+
+    <!-- Producto -->
+    <string name="string_comprar_ahora">Comprar ahora</string>
+    <string name="string_add_carrito">Agregar al carrito</string>
+    <string name="string_recomendaciones_title">Recomendaciones específicas</string>
+
+    <!-- Antiguos -->
+    <string name="string_rut_register">RUT</string>
+    <string name="string_telefono_register">Teléfono</string>
+    <string name="string_direccion_register">Dirección</string>
+    <string name="string_comuna_register">Comuna</string>
+    <string name="string_codigoPostal_register">Código Postal</string>
+    <string name="string_email_register">E-mail</string>
+    <string name="string_contrasena_register">Contraseña</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

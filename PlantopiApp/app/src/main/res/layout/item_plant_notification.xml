@@ -1,0 +1,95 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Plant Image -->
+        <ImageView
+            android:id="@+id/plant_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Plant Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Plant Name -->
+            <TextView
+                android:id="@+id/plant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre Planta"
+                android:textSize="18sp"
+                android:textColor="@color/Buttons_Primary_Background_primary_button_light"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+            <!-- Common Name -->
+            <TextView
+                android:id="@+id/plant_common_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre Común"
+                android:textSize="14sp"
+                android:textColor="@color/Typography_text_disable_light"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+            <!-- Watering Frequency -->
+            <TextView
+                android:id="@+id/watering_frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frecuencia de riego: 3 días"
+                android:textSize="14sp"
+                android:textColor="@color/Buttons_Primary_Background_primary_button_light" />
+
+            <!-- Next Watering Date -->
+            <TextView
+                android:id="@+id/next_watering_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Próximo riego: 24/12/2024"
+                android:textSize="14sp"
+                android:textColor="@color/Buttons_Primary_Background_primary_button_light"  />
+
+            <!-- Reminder Status -->
+            <TextView
+                android:id="@+id/reminder_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reminder Active"
+                android:textSize="14sp"
+                android:textColor="@color/Typography_text_disable_light"
+                android:layout_marginTop="4dp" />
+
+            <!-- Activate Button -->
+            <Button
+                android:id="@+id/activate_reminder_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Activate"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/Buttons_Primary_Background_primary_button_light"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

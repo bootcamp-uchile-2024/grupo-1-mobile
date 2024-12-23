@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="156dp"
+    android:layout_height="256dp"
+    app:strokeWidth="3dp"
+    app:cardCornerRadius="0dp"
+    android:layout_margin="16dp"
+    app:strokeColor="@android:color/transparent"
+    android:background="@drawable/shape_background_card">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/iv_producto"
+            android:layout_width="156dp"
+            android:layout_height="160dp"
+            android:src="@drawable/img"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/iv_favorite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_no_favorite_with_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/linearLayout_producto"
+            android:visibility="visible"
+            android:layout_margin="12dp"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_producto"
+            android:layout_width="156dp"
+            android:layout_height="96dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/shape_background_card_inf"
+            app:layout_constraintTop_toBottomOf="@id/iv_producto">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="0dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:id="@+id/tv_nombre_producto"
+                    android:layout_width="76dp"
+                    android:layout_height="40dp"
+                    android:text="Nombre"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/Semantic_Text_primary_body_light"
+                    android:theme="@style/body_regular_xxxs"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_add_cart"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_add_cart_with_background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_nombre_producto"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_precio_producto"
+                    android:layout_width="124dp"
+                    android:layout_height="32dp"
+                    android:gravity="left"
+                    android:paddingTop="4dp"
+                    android:text="Precio"
+                    android:theme="@style/headline_bold_s"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

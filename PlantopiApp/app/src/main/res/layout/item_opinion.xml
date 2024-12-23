@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="323dp"
+    android:layout_height="220dp"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/shape_opiniones"
+    android:layout_marginEnd="16dp">
+
+    <RatingBar
+        android:id="@+id/ratingBar_opiniones"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="3.5"
+        android:progressTint="#DFBB41"/>
+
+    <TextView
+        android:id="@+id/tv_opinion_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/headline_bold_s"
+        android:text="tittle_opinoon"
+        />
+
+    <TextView
+        android:id="@+id/tv_opinion_descrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/body_regular_xxxs"
+        android:text="tittle_opinoon"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:padding="4dp"
+            android:src="@drawable/ic_person"
+            android:background="@drawable/shape_circle"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_persona_opinion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:layout_gravity="center_vertical"
+                android:theme="@style/headline_semibold_xxs"/>
+
+            <TextView
+                android:id="@+id/tv_fecha_opinion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Fecha"
+                android:theme="@style/body_regular_xxxs"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

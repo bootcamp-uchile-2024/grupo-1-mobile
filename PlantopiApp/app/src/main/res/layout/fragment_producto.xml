@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    tools:context=".catalogo_fragments.ProductoFragment"
+    android:id="@+id/fragment_producto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp">
+
+                <TextView
+                    android:id="@+id/tv_producto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Producto"
+                    android:textAlignment="textStart"
+                    android:textColor="#3D4C15"
+                    android:theme="@style/headline_semibold_xs"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|center_vertical"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:rating="3"
+                    android:progressTint="#DFBB41"
+                    android:minHeight="25dp"
+                    android:maxHeight="64dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager_productos"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_producto_precio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/headline_semibold_sm"
+                android:paddingStart="16dp"
+                android:text="$23.990"/>
+
+            <TextView
+                android:id="@+id/tv_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/body_regular_xxxs"
+                android:paddingStart="16dp"
+                android:text="Belleza única y natural con un cuidado sencillo. Ideal para interiores y hogares con niños y mascotas."/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_shopNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:gravity="center_horizontal"
+                android:padding="12dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/string_comprar_ahora"
+                android:textAllCaps="false"
+                android:textColor="@color/Buttons_Primary_Text_text_primary_light"
+                android:theme="@style/headline_semibold_xxs"
+                app:layout_constraintTop_toBottomOf="@+id/tv_register_fragment_first"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_addCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#FEDCCF"
+                android:gravity="center_horizontal"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/string_add_carrito"
+                android:textAllCaps="false"
+                android:textColor="#8F4C34"
+                android:theme="@style/headline_semibold_xxs"
+                app:layout_constraintTop_toBottomOf="@+id/tv_register_fragment_first"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_expandable"
+                android:background="@drawable/shape_expandable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="4dp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:theme="@style/headline_bold_xs"
+                android:text="Opiniones del Producto"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_opiniones"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    
+
+    
+    
+
+
+
+
+
+
+</FrameLayout>

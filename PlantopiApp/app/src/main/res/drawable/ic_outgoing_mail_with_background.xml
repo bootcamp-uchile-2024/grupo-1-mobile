@@ -1,0 +1,39 @@
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:height="118dp"
+        android:width="118dp"
+        android:gravity="center"
+        android:background="@drawable/gradient_grey">
+        <shape
+            android:shape="oval">
+
+            <gradient
+                android:type="linear"
+                android:startX="29.5"
+                android:startY="59"
+                android:endX="88.5"
+                android:endY="59"
+                >
+                <item
+                    android:color="#0F3C491E"
+                    android:offset="0"
+                    />
+                <item
+                    android:color="#293D4C15"
+                    android:offset="0.969"
+                    />
+            </gradient>
+        </shape>
+    </item>
+
+    <item
+        android:height="80dp"
+        android:width="80dp"
+        android:padding="12dp"
+        android:gravity="center"
+        android:drawable="@drawable/ic_outgoing_mail">
+    </item>
+</layer-list>
+

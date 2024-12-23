@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recupera_pass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecuperaPass">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_recoverPass"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backButton_recoverPass"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="onBackPressed"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="@string/string_recupera_title"
+            android:theme="@style/headline_fragment" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_recupera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressTint="@color/Typography_text_primary_light"
+            android:layout_gravity="center"
+            android:progress="20"
+            android:max="100"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_layout_recupera"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_recoverPass"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

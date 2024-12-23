@@ -1,0 +1,116 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="@drawable/gradient_carrito"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageView_product"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shape_carrito_foto"
+        android:src="@drawable/img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvProductoCarrito"
+        android:layout_width="280dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="104dp"
+        android:breakStrategy="simple"
+        android:ellipsize="end"
+        android:lines="2"
+        android:maxLines="2"
+        android:scrollHorizontally="false"
+        android:textColor="#576421"
+        android:theme="@style/headline_semibold_xs"
+        app:flow_horizontalAlign="start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Este texto es muy largo asi que lo va a partir en dos" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="110dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/shape_carrito_contador"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+
+        app:layout_constraintStart_toEndOf="@+id/imageView_product"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnDecrease"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_delete_forever"
+            android:backgroundTint="#CBD1BA" />
+
+        <TextView
+            android:id="@+id/etCantidadCarrito"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:lines="1"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            tools:text="10" />
+
+        <ImageView
+            android:id="@+id/btnIncrease"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end"
+
+            android:background="@drawable/ic_plus"
+            android:backgroundTint="#CBD1BA" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPrecioCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="#576421"
+        android:theme="@style/headline_semibold_xs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="$3990" />
+
+    <TextView
+        android:id="@+id/textView_eliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="102dp"
+        android:text="Eliminar"
+        android:textColor="#9DA581"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView_product"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="102dp"
+        android:text="Ver Producto"
+        android:textColor="#506223"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView_eliminar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

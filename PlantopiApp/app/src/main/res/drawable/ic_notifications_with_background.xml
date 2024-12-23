@@ -1,0 +1,15 @@
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:height="44dp" android:width="44dp" android:gravity="center">
+        <shape
+            android:shape="oval">
+            <solid
+                android:color="@color/Buttons_Secundary_Background_secundary_butt_light"/>
+        </shape>
+    </item>
+
+    <item android:gravity="center"
+        android:drawable="@drawable/ic_notifications_on">
+    </item>
+</layer-list>

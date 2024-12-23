@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="78dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <!-- Icon for Child -->
+    <ImageView
+        android:id="@+id/childIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="Child Icon"
+        app:tint="@color/Buttons_Primary_Background_primary_button_light"/>
+
+    <!-- Title for Child -->
+    <TextView
+        android:id="@+id/childName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Child Item"
+        android:theme="@style/body_semibold_xxxs"
+        android:textColor="#728C24"/>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Plantas"
+        android:title="@string/string_plantas"/>
+
+    <item
+        android:id="@+id/Maceteros"
+        android:title="@string/string_maceteros"/>
+
+    <item
+        android:id="@+id/Fertilizantes"
+        android:title="@string/string_fertilizantes"/>
+
+    <item
+        android:id="@+id/Sustratos"
+        android:title="@string/string_sustratos"/>
+
+</menu>

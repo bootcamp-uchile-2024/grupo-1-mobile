@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_orange_green"
+    tools:context=".register_fragments.Register_1st">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="top"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView_plantoper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hapticFeedbackEnabled="false"
+                android:layout_marginBottom="16dp"
+                android:text="@string/string_confirmaDatos"
+                android:textSize="20sp"
+                android:theme="@style/headline_semibold_xs" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_button_transparent"
+                android:layout_marginBottom="16dp">
+
+                <!-- Icon -->
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/google_icon" />
+
+                <!-- Text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/string_reg_google"
+                    android:theme="@style/headline_semibold_xxs"
+                    android:textColor="@color/Buttons_Tertiary_Text_text_tertiaty_light"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginBottom="16dp">
+
+                <!-- Left Line -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="#C6C7BF"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:text="@string/string_registro_local"
+                    android:textSize="14dp"
+                    android:lineSpacingExtra="12sp"
+                    android:lineHeight="20dp"
+                    android:translationY="-2sp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="#797E6D"
+                    android:theme="@style/body_regular_xxxs"/>
+
+                <!-- Right Line -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="#C6C7BF"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/string_email"
+                android:theme="@style/headline_medium_xxs" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_text"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:padding="4dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/circle_icon"
+                    android:src="@drawable/ic_email" />
+
+                <EditText
+                    android:id="@+id/editText_correo_registro"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/string_ingresa_correo"
+                    android:theme="@style/hint_medium_xxs"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/string_nombre_register"
+                android:theme="@style/headline_medium_xxs" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_text"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:padding="4dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/circle_icon"
+                    android:src="@drawable/ic_person" />
+
+                <EditText
+                    android:id="@+id/editText_nombre_registro"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:hint="@string/string_ingresa_nombre"
+                    android:theme="@style/hint_medium_xxs"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/string_apellido_register"
+                android:theme="@style/headline_medium_xxs" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_text"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:padding="4dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/circle_icon"
+                    android:src="@drawable/ic_person" />
+
+                <EditText
+                    android:id="@+id/editText_apellido_registro"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:hint="@string/string_ingresa_apellido"
+                    android:theme="@style/hint_medium_xxs"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_contrasena_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/string_password"
+                android:textAlignment="textStart"
+                android:theme="@style/headline_medium_xxs" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_text"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:padding="4dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/circle_icon"
+                    android:src="@drawable/ic_lock_open"
+                    />
+
+                <EditText
+                    android:id="@+id/editText_contrasena_registro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/string_ingresa_contr"
+                    android:inputType="textEmailAddress"
+                    android:theme="@style/hint_medium_xxs"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:gravity="right"
+                    android:src="@drawable/ic_remove_eye" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_contrasena2_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/string_repite_contr2"
+                android:textAlignment="textStart"
+                android:theme="@style/headline_medium_xxs" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_text"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:padding="4dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/circle_icon"
+                    android:src="@drawable/ic_lock_open"
+                    />
+
+                <EditText
+                    android:id="@+id/editText_contrasena2_registro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/string_repite_contr"
+                    android:inputType="textEmailAddress"
+                    android:theme="@style/hint_medium_xxs"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:gravity="right"
+                    android:src="@drawable/ic_remove_eye" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox_recomendaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:buttonTint="#93B032"
+                android:text="@string/string_acepto_recomendaciones"
+                android:theme="@style/terminos_condiciones"/>
+
+            <CheckBox
+                android:id="@+id/checkBox_terminos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:buttonTint="#93B032"
+                android:text="@string/string_acepto_terminos"
+                android:theme="@style/terminos_condiciones"
+                android:layout_marginBottom="16dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_register1st"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:gravity="center_horizontal"
+                android:padding="12dp"
+                android:text="@string/string_confirmar_registro"
+                android:textAllCaps="false"
+                android:textColor="@color/Buttons_Primary_Text_text_primary_light"
+                android:theme="@style/headline_semibold_xxs"
+                app:layout_constraintTop_toBottomOf="@+id/tv_register_fragment_first"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

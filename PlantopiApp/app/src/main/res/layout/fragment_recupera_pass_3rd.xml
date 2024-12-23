@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_orange_green"
+    tools:context=".register_fragments.Register_3rd">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:gravity="top|center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            
+            <ImageView
+                android:layout_width="118dp"
+                android:layout_height="118dp"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/shape_circle_degradado"
+                android:src="@drawable/ic_lock"
+                app:tint="@color/Buttons_Primary_Background_primary_button_light"
+                />
+
+            <TextView
+                android:id="@+id/textView_plantoper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hapticFeedbackEnabled="false"
+                android:text="@string/string_nueva_contrasena"
+                android:textSize="20sp"
+                android:theme="@style/headline_semibold_xs" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_text"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:padding="4dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/circle_icon"
+                    android:src="@drawable/ic_lock_open"
+                    />
+
+                <EditText
+                    android:id="@+id/editText_contrasena_registro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/string_ingresa_contr"
+                    android:inputType="textEmailAddress"
+                    android:theme="@style/hint_medium_xxs"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:gravity="right"
+                    android:src="@drawable/ic_remove_eye" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_contrasena2_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/string_repite_contr2"
+                android:textAlignment="textStart"
+                android:theme="@style/headline_medium_xxs" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_text"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:padding="4dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/circle_icon"
+                    android:src="@drawable/ic_lock_open"
+                    />
+
+                <EditText
+                    android:id="@+id/editText_contrasena2_registro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/string_repite_contr"
+                    android:inputType="textEmailAddress"
+                    android:theme="@style/hint_medium_xxs"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:gravity="right"
+                    android:src="@drawable/ic_remove_eye" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_recover3rd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center_horizontal"
+                android:padding="12dp"
+                android:text="@string/string_confirmar_contrasena"
+                android:textAllCaps="false"
+                android:textColor="@color/Buttons_Primary_Text_text_primary_light"
+                android:theme="@style/headline_semibold_xxs"
+                app:layout_constraintTop_toBottomOf="@+id/tv_register_fragment_first"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/string_codigo_no_enviado"
+                    android:theme="@style/body_regular_xxxs"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_reenviar_codigo"
+                    android:theme="@style/body_regular_xxxs"
+                    android:textStyle="bold"
+                    android:textColor="@color/Buttons_Primary_Background_primary_button_light"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

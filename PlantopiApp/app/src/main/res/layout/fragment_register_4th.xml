@@ -1,0 +1,279 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/gradient_orange_green"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    tools:context=".register_fragments.Register_4th">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Qué tipo de plantas prefieres?"
+            android:textAlignment="center"
+            android:theme="@style/headline_semibold_s"
+            android:textColor="@color/Icons_background_color_light"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Cuidado Semanal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cuidado semanal"
+            android:textAlignment="center"
+            android:theme="@style/headline_semibold_xs"
+            android:textColor="@color/Icons_background_color_light" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupCuidadoSemanal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            app:chipSpacing="8dp"
+            app:chipSpacingVertical="4dp"
+            android:gravity="center">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cuidado_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¡Fácil de mantener!"
+                style="@style/CustomChip"
+                app:chipIconVisible="false"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cuidado_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Me gusta dedicarle un rato"
+                style="@style/CustomChip"
+                app:chipIconVisible="false" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cuidado_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disfruto cuidarlas con detalle"
+                style="@style/CustomChip"
+                app:chipIconVisible="false"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- Espacio -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Espacio"
+            android:textAlignment="center"
+            android:theme="@style/headline_semibold_xs"
+            android:textColor="@color/Icons_background_color_light"
+            android:layout_marginTop="16dp" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupEspacio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            app:chipSpacing="8dp"
+            app:chipSpacingVertical="4dp"
+            android:gravity="center">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/espacio_pequeñas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pequeñas"
+                style="@style/CustomChip"
+                app:chipIconVisible="false" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/espacio_medianas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medianas"
+                style="@style/CustomChip"
+                app:chipIconVisible="false"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/espacio_grandes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grandes"
+                style="@style/CustomChip"
+                app:chipIconVisible="false"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- Iluminación -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iluminación"
+            android:textAlignment="center"
+            android:theme="@style/headline_semibold_xs"
+            android:textColor="@color/Icons_background_color_light"
+            android:layout_marginTop="16dp" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupIluminacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            app:chipSpacing="8dp"
+            app:chipSpacingVertical="4dp"
+            android:gravity="center">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/luz_directo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sol directo"
+                style="@style/CustomChip"
+                app:chipIconVisible="false"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/luz_indirecto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sol indirecto"
+                style="@style/CustomChip"
+                app:chipIconVisible="false"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/luz_suave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luz moderada"
+                style="@style/CustomChip"
+                app:chipIconVisible="false"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/luz_sin_luz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solo luz artificial"
+                style="@style/CustomChip"
+                app:chipIconVisible="false" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- Temperatura -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperatura"
+            android:textAlignment="center"
+            android:theme="@style/headline_semibold_xs"
+            android:textColor="@color/Icons_background_color_light"
+            android:layout_marginTop="16dp" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupTemperatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            app:chipSpacing="8dp"
+            app:chipSpacingVertical="4dp"
+            android:gravity="center">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/temp_calido_seco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Como un día de verano"
+                style="@style/CustomChip"
+                app:chipIconVisible="false" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/temp_calido_humedo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casi como en la selva"
+                style="@style/CustomChip"
+                app:chipIconVisible="false"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/temp_templado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balanceado"
+                style="@style/CustomChip"
+                app:chipIconVisible="false"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/temp_frio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Como invierno"
+                style="@style/CustomChip"
+                app:chipIconVisible="false"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- ¿Tienes Mascotas? -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Tienes Mascotas?"
+            android:textAlignment="center"
+            android:theme="@style/headline_semibold_xs"
+            android:textColor="@color/Icons_background_color_light"
+            android:layout_marginTop="16dp" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupMascotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            app:chipSpacing="8dp"
+            app:chipSpacingVertical="4dp"
+            android:gravity="center">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/pet_friendly_si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tengo mascota"
+                style="@style/CustomChip"
+                app:chipIconVisible="false"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/pet_friendly_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No tengo mascota"
+                style="@style/CustomChip"
+                app:chipIconVisible="false"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- Continue Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/completar_encuesta"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Completar encuesta"
+            android:layout_marginTop="16dp"
+            android:theme="@style/headline_semibold_xxs"
+            android:backgroundTint="@color/Icons_background_color_light"
+            android:textColor="#DAEA98"
+            android:background="@drawable/rounded_button"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

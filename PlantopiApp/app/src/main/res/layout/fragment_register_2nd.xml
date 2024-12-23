@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_orange_green"
+    tools:context=".register_fragments.Register_2nd">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="top|center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView_verifica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hapticFeedbackEnabled="false"
+                android:layout_marginBottom="16dp"
+                android:text="@string/string_verifica_cuenta"
+                android:textSize="20sp"
+                android:theme="@style/headline_semibold_xs" />
+
+            <TextView
+                android:id="@+id/textView_verifica2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:hapticFeedbackEnabled="false"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/string_verifica_cuenta2"
+                android:textColor="#3C491E"
+                android:theme="@style/body_regular_xxxs" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_text"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginBottom="16dp">
+
+
+                <EditText
+                    android:id="@+id/editText_correo_registro"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/string_ingresa_codigo"
+                    android:theme="@style/hint_medium_xxs"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_reenvia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:lineSpacingExtra="3sp"
+                android:text="@string/string_reenviar_codigo"
+                android:theme="@style/button_onlyText" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_register2nd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:gravity="center_horizontal"
+                android:padding="12dp"
+                android:text="@string/string_confirmar_registro"
+                android:textAllCaps="false"
+                android:textColor="@color/Buttons_Primary_Text_text_primary_light"
+                android:theme="@style/headline_semibold_xxs"
+                app:layout_constraintTop_toBottomOf="@+id/tv_register_fragment_first"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

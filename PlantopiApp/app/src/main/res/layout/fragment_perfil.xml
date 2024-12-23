@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".home_fragments.PerfilFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido Plantoper"
+            android:theme="@style/headline_semibold_s"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acá podrás ver los detalles de tu cuenta de usuario"
+            android:layout_marginBottom="8dp"
+            android:theme="@style/body_semibold_xxxs"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            style="@style/headline_medium_xxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_in_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inicia sesión para ver esta información"
+            style="@style/body_regular_xxxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apellido"
+            style="@style/headline_medium_xxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_in_apellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inicia sesión para ver esta información"
+            style="@style/body_regular_xxxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo registrado"
+            style="@style/headline_medium_xxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_in_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inicia sesión para ver esta información"
+            style="@style/body_regular_xxxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teléfono"
+            style="@style/headline_medium_xxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_in_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inicia sesión para ver esta información"
+            style="@style/body_regular_xxxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dirección"
+            style="@style/headline_medium_xxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_in_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inicia sesión para ver esta información"
+            style="@style/body_regular_xxxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Código Postal"
+            style="@style/headline_medium_xxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_in_codigoPostal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inicia sesión para ver esta información"
+            style="@style/body_regular_xxxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preferencias"
+            style="@style/headline_medium_xxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cuidado Semanal"
+            style="@style/headline_medium_xxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_preferencia1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inicia sesión para ver esta información"
+            style="@style/body_regular_xxxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Espacio"
+            style="@style/headline_medium_xxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_preferencia2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inicia sesión para ver esta información"
+            style="@style/body_regular_xxxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iluminación"
+            style="@style/headline_medium_xxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_preferencia3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inicia sesión para ver esta información"
+            style="@style/body_regular_xxxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperatura"
+            style="@style/headline_medium_xxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_preferencia4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inicia sesión para ver esta información"
+            style="@style/body_regular_xxxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Tienes Mascotas?"
+            style="@style/headline_medium_xxs"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_preferencia5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inicia sesión para ver esta información"
+            style="@style/body_regular_xxxs"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

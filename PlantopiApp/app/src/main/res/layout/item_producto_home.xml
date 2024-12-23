@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="230dp"
+    android:layout_height="357dp"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="0dp"
+    android:layout_margin="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:strokeWidth="0dp"
+        android:background="@drawable/shape_background_card">
+
+        <ImageView
+            android:id="@+id/iv_producto_home"
+            android:layout_width="230dp"
+            android:layout_height="245dp"
+            android:src="@drawable/img"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/iv_detalle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/ic_no_favorite_with_background"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/iv_favorite_home"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_favorite_home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_no_favorite_with_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/linearLayout_producto_home"
+            android:visibility="visible"
+            android:layout_margin="12dp"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_producto_home"
+            android:layout_width="230dp"
+            android:layout_height="112dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_producto_home">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="0dp">
+
+                <TextView
+                    android:id="@+id/tv_nombre_producto_home"
+                    android:layout_width="98dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="Nombre"
+                    android:textColor="@color/Semantic_Text_primary_body_light"
+                    android:theme="@style/body_regular_xxxs"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_precio_producto_home"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <ImageView
+                    android:id="@+id/imageView_luz"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_add_cart_with_background"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView"
+                    app:layout_constraintStart_toEndOf="@+id/tv_nombre_producto_home"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView_agua"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_add_cart_with_background"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView_luz"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_luz"
+                    app:layout_constraintTop_toTopOf="@+id/imageView_luz" />
+
+
+                <ImageView
+                    android:id="@+id/imageView_categoria"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_add_cart_with_background"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView_agua"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_agua"
+                    app:layout_constraintTop_toTopOf="@+id/imageView_agua" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_add_cart_with_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/tv_precio_producto_home" />
+
+                <TextView
+                    android:id="@+id/tv_precio_producto_home"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:gravity="left"
+                    android:paddingTop="4dp"
+                    android:text="Precio"
+                    android:theme="@style/headline_bold_s"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

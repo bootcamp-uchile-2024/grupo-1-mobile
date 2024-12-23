@@ -1,0 +1,36 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base Shape with Solid Color -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" /> <!-- Background color -->
+            <corners android:topRightRadius="24dp" /> <!-- Top-right rounded corner -->
+            <size
+                android:height="142dp"
+                android:width="337dp" /> <!-- Size of the shape -->
+        </shape>
+    </item>
+
+    <!-- Stroke for Top, Left, and Right -->
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="2dp"
+                android:color="#DDE8B6" /> <!-- Border width and color -->
+            <solid android:color="@android:color/transparent" />
+            <corners android:topRightRadius="24dp" /> <!-- Top-right rounded corner -->
+            <size
+                android:height="142dp"
+                android:width="337dp" />
+        </shape>
+    </item>
+
+    <!-- Overlay to Hide Bottom Stroke -->
+    <item android:top="140dp"> <!-- Adjust overlay height -->
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" /> <!-- Matches background color -->
+            <size
+                android:height="2dp"
+                android:width="337dp" /> <!-- Same size as stroke -->
+        </shape>
+    </item>
+</layer-list>
